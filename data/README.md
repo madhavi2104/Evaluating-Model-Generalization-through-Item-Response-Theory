@@ -1,125 +1,145 @@
-# Data
+# Data Setup
 
-## Datasets
-The datasets used in this project include:
-1. **ImageNet**
-2. **ImageNet Sketch**
-3. **ImageNet R**
-4. **ImageNet V2**
-5. **ImageNot**
+This repository does **not** include the datasets used in the thesis.  
+You must download and prepare them locally before running the pipeline.
 
-Follow the instructions below to download and prepare these datasets.
+## Datasets used
 
----
+The experiments in this repository use the following datasets:
 
-### **1. ImageNet**
-- **Location**: [`ILSVRC2012`](https://www.image-net.org/)
-- **Files Needed**:
-  - `ILSVRC2012_img_val/` (validation images)
-  - `Annotations/CLS-LOC/val/ILSVRC2012_devkit_t12/` (annotations and `meta.mat` file)
-- **Instructions**:
-  1. Download the validation images and devkit from the official [ImageNet website](https://www.image-net.org/download.php).
-  2. Organize the files as:
-     ```
-     data/
-     └── ImageNet/
-         ├── ILSVRC2012_img_val/
-         └── Annotations/CLS-LOC/val/ILSVRC2012_devkit_t12/
-     ```
+- **ImageNet**
+- **ImageNet-Sketch**
+- **ImageNet-C**
+- **CIFAR-100**
 
----
+Because of licensing, size, and distribution restrictions, dataset files are not stored in this repository.
 
-### **2. ImageNet Sketch**
-- **Location**: [ImageNet Sketch GitHub](https://github.com/HaohanWang/ImageNet-Sketch)
-- **Instructions**:
-  1. Clone the repository:
-     ```bash
-     git clone https://github.com/HaohanWang/ImageNet-Sketch.git
-     ```
-  2. Download the dataset using the provided script:
-     ```bash
-     python data_download.py
-     ```
-  3. Extract the dataset to:
-     ```
-     data/
-     └── ImageNet_Sketch/
-         ├── data/
-         └── Synsets/
-     ```
+## General setup principle
 
----
+All dataset paths should be configured locally through config files or environment variables.  
+Do not hardcode machine-specific absolute paths into the source code.
 
-### **3. ImageNet R**
-- **Location**: [ImageNet R GitHub](https://github.com/hendrycks/imagenet-r)
-- **Instructions**:
-  1. Download the dataset from the [GitHub releases page](https://github.com/hendrycks/imagenet-r/releases).
-  2. Extract the images and organize as:
-     ```
-     data/
-     └── ImageNet_R/
-         ├── nXXXXXX/
-         └── Synsets/
-     ```
+The repository is designed so that users can point the pipeline to their own local dataset locations.
 
----
+## Expected local structure
 
-### **4. ImageNet V2**
-- **Location**: [Hugging Face Dataset](https://huggingface.co/datasets/vaishaal/ImageNetV2)
-- **Instructions**:
-  1. Use the Hugging Face Hub to download:
-     ```bash
-     pip install datasets
-     python -c "from datasets import load_dataset; load_dataset('vaishaal/ImageNetV2')"
-     ```
-  2. Save the dataset as:
-     ```
-     data/
-     └── ImageNet_V2/
-         ├── matched-frequency/
-         ├── threshold-0.7/
-         ├── top-images/
-         └── Synsets/
-     ```
+A recommended local structure is:
 
----
+```text
+data/
+├── external/
+│   ├── imagenet/
+│   ├── imagenet_sketch/
+│   ├── imagenet_c/
+│   └── cifar100/
+├── processed/
+└── README.md
+```
 
-### **5. ImageNot**
-- **Location**: [ImageNot GitHub](https://github.com/olawalesalaudeen/imagenot)
-- **Instructions**:
-  1. Clone the repository:
-     ```bash
-     git clone https://github.com/olawalesalaudeen/imagenot.git
-     ```
-  2. Manually download the dataset following the repository's README.
-  3. Save the dataset as:
-     ```
-     data/
-     └── ImageNot/
-         ├── images/
-         └── Synsets/
-     ```
-*Currently, no dataset is available for ImageNot*
+The exact internal structure of each dataset should follow the standard layout expected by the corresponding loading code.
 
----
+## Dataset notes
 
-## **Synset Files**
+### ImageNet
 
-Each dataset requires a **synset mapping file**. These files can be found in `data/Synsets/`:
-- `ImageNet_synsets.txt`
-- `Sketch_synsets.txt`
-- `ImageNetR_synsets.txt`
-- `ImageNetV2_synsets.txt`
-- `ImageNot_synsets.txt`
+ImageNet should be stored in the standard class-folder format expected by common PyTorch and timm pipelines.
 
-If any are missing, you can regenerate them using the `synset_generato.py` file in the repository.
+Recommended layout:
 
----
+```text
+data/external/imagenet/
+├── train/
+│   ├── n01440764/
+│   ├── n01443537/
+│   └── ...
+└── val/
+    ├── n01440764/
+    ├── n01443537/
+    └── ...
+```
 
-## **Setup**
+If your local copy uses a different validation structure, adapt the data loading config accordingly.
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/madhavi2104/IRTNet.git
-   cd IRTNet
+### ImageNet-Sketch
 
+ImageNet-Sketch should be arranged in a class-folder structure compatible with evaluation code.
+
+Recommended layout:
+
+```text
+data/external/imagenet_sketch/
+├── n01440764/
+├── n01443537/
+└── ...
+```
+
+The class ordering and label mapping should be checked carefully so that it matches the ImageNet label space used by the models.
+
+### ImageNet-C
+
+ImageNet-C contains corruption types and severity levels derived from ImageNet validation images.
+
+Recommended layout:
+
+```text
+data/external/imagenet_c/
+├── gaussian_noise/
+│   ├── 1/
+│   ├── 2/
+│   ├── 3/
+│   ├── 4/
+│   └── 5/
+├── shot_noise/
+├── motion_blur/
+└── ...
+```
+
+The exact corruption subset, severity levels, and sampling choices used in the thesis should be documented in the experiment configs or analysis notes.
+
+### CIFAR-100
+
+CIFAR-100 may be handled either through automatic dataset download in PyTorch or through a manually prepared local copy, depending on the script.
+
+If stored locally, use a clearly documented path and keep setup consistent across scripts.
+
+## Processed data
+
+The `data/processed/` directory can be used for generated intermediate files such as:
+
+- merged metadata
+- label maps
+- sampled subsets
+- cached preprocessing outputs
+- binary response input tables
+
+Raw external datasets should remain separate from processed outputs.
+
+## Important reproducibility note
+
+To make the repository portable:
+
+- use config files for dataset roots
+- avoid absolute personal paths
+- document any dataset filtering or subset selection
+- document label mappings explicitly
+- keep preprocessing deterministic where possible
+
+## What will be documented later
+
+This file is the top-level data guide. As the repository is cleaned, it should later include:
+
+- exact dataset versions
+- download sources
+- checksum or verification notes where possible
+- preprocessing decisions
+- subset definitions used in each experiment
+- any label remapping required for evaluation
+
+## Summary
+
+Before running the repository, make sure:
+
+1. all required datasets are available locally
+2. the directory structure matches the expected format
+3. dataset root paths are correctly set in config files
+4. any label mapping assumptions are consistent across scripts
