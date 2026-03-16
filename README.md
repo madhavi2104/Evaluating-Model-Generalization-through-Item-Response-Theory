@@ -101,8 +101,8 @@ The overall workflow is:
 Clone the repository:
 
 ```bash
-git clone <https://github.com/madhavi2104/Evaluating-Model-Generalization-through-Item-Response-Theory.git>
-cd <Evaluating-Model-Generalization-through-Item-Response-Theory>
+git clone https://github.com/madhavi2104/Evaluating-Model-Generalization-through-Item-Response-Theory.git
+cd Evaluating-Model-Generalization-through-Item-Response-Theory
 ```
 
 Create and activate an environment, then install dependencies:
