@@ -1,46 +1,54 @@
-# Ignore dataset directories
-data/ImageNet/
-data/ImageNetR/
-data/ImageNot/
-data/ImageNet_V2/
-data/ImageNet_Sketch/
-data/imagenet-a/
-
-# Ignore Kaggle configuration
-data/config/
-
-# Ignore temporary or intermediate files
-*.tmp
-*.log
-*.zip
-
-# Ignore Python cache and virtual environment files
+# Python
 __pycache__/
 *.py[cod]
 *.pyo
-env/
-venv/
+*.pyd
+*.so
+*.egg
 *.egg-info/
+build/
+dist/
 
-# Ignore OS-specific files
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
 .DS_Store
 Thumbs.db
 
-# Ignore editor and IDE-specific files
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
+# Logs
+*.log
 
-# Ignore model files if they are large
-models/
-*.h5
-*.ckpt
-*.onnx
+# PyTorch / model files
+*.pth
 *.pt
+*.ckpt
 
-# Ignore any backup or temporary files
-*.bak
+# Data and outputs
+data/raw/
+data/interim/
+results/
+outputs/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Coverage / testing
+.coverage
+pytest_cache/
+
+# Misc
+*.tmp
 *.swp
-*.~*
-
