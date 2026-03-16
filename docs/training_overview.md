@@ -74,13 +74,21 @@ The repository also includes a separate script for head-only adaptation on CIFAR
 
 This script is a dedicated protocol rather than a generic backend. It is used to:
 
-- load pretrained vision models
-- replace the classifier head for CIFAR-100
-- train only the head
-- evaluate the adapted model
-- support CIFAR-100-specific experiments
+- load ImageNet-pretrained vision models
+- replace the original classifier head with a CIFAR-100 head
+- freeze the pretrained backbone
+- train only the classifier head on CIFAR-100
+- evaluate the adapted model on the CIFAR-100 test split
+- export binary correctness outputs for downstream IRT analysis
 
 This workflow is kept separate because it is conceptually different from the main full-training pipelines.
+
+### Important clarification
+
+Although this protocol starts from ImageNet-pretrained weights, it is **not strict zero-shot evaluation** on CIFAR-100.  
+It is a **head-only supervised adaptation protocol** using pretrained initialization.
+
+That distinction matters for reproducibility and for matching the experimental setup described in the thesis.
 
 ## Wrappers vs core training files
 
@@ -111,6 +119,16 @@ python scripts/train_torchvision_wrapper.py resnet50 Sketch \
   --output-root /path/to/results
 ```
 
+### Head-only CIFAR-100 example
+
+```bash
+python src/training/protocols/head_only_cifar100.py \
+  --model resnet50 \
+  --data-root /path/to/CIFAR100_split \
+  --output-root /path/to/results \
+  --epochs 10
+```
+
 ## Environment variable option
 
 Instead of passing paths every time, you can set:
@@ -125,6 +143,7 @@ and then run:
 ```bash
 python scripts/train_timm_wrapper.py convnext_base CIFAR100
 python scripts/train_torchvision_wrapper.py resnet50 Sketch
+python src/training/protocols/head_only_cifar100.py --model resnet50
 ```
 
 ## Dataset assumption
@@ -138,6 +157,13 @@ The current setup expects split folders such as:
 - `CIFAR100_split`
 
 These dataset preparation steps must be completed before training is launched.
+
+For the head-only CIFAR-100 protocol, the script expects a prepared directory with:
+
+- `train/`
+- `test/`
+
+under the selected CIFAR-100 root.
 
 ## What the wrappers do
 
