@@ -1,5 +1,5 @@
 # ============================================================
-# dif_analysis.R
+# dif_tif_linking.R
 # Differential Item Functioning (DIF), Linking, and Test Information Functions (TIF)
 # Repo-safe version for DIF, linking, and TIF comparison
 # ============================================================
