@@ -1,0 +1,67 @@
+# Configuration file for setting paths and parameters
+
+paths:
+  # Root paths for the project (relative to the repo root)
+  repo_root: "."  # The root of your repository (can stay as ".")
+  results_root: "results"  # Output folder for results
+  output_root: "output"  # Folder for final output files (plots, results)
+
+  # Input datasets (relative paths inside the repo)
+  response_matrices: "data/response_matrices"  # Path for response matrices
+  predictions: "output/predictions"  # Path for prediction results
+  theta_estimates: "output/theta_estimates"  # Path for IRT theta estimates
+
+  # Analysis directories (where results are stored)
+  analysis:
+    dif_within_dataset: "output/analysis/irt/dif_within_dataset"  # DIF analysis output
+    irt_linking: "output/analysis/irt/irt_linking"  # IRT linking results
+    test_information: "output/analysis/irt/test_information"  # TIF analysis results
+
+# Dataset-specific paths
+datasets:
+  # Path to the mapping file for ImageNet ↔ CIFAR superclasses
+  imagenet_to_cifar_map: "data/ImageNet/imagenet_to_cifar_superclasses.csv"
+
+  # Dataset-specific paths and splits
+  imagenet:
+    path: "data/external/imagenet/"  # ImageNet dataset path
+    split: "train"  # Dataset split used for training
+  
+  imagenet_sketch:
+    path: "data/external/imagenet_sketch/"  # ImageNet-Sketch dataset path
+    split: "train"
+  
+  imagenet_c:
+    path: "data/external/imagenet_c/"  # ImageNet-C dataset path
+    split: "train"
+  
+  cifar100:
+    path: "data/external/cifar100/"  # CIFAR-100 dataset path
+    split: "train"
+
+# Dataset parameters for evaluation (for each dataset and mode)
+datasets_for_eval:
+  imagenet: 
+    mode: "zeroshot"  # Evaluation mode for ImageNet
+    regimes: ["zeroshot", "trained", "head_only"]  # Possible regimes for evaluation
+
+  cifar100:
+    mode: "trained"  # Evaluation mode for CIFAR-100
+    regimes: ["zeroshot", "trained"]  # Possible regimes for evaluation
+
+# IRT Parameters for evaluation and analysis
+irt_params:
+  dif_threshold: 0.05  # Threshold for DIF significance (e.g., flag items with DIF > 0.05)
+  max_items_for_pca: 5000  # Max number of items to use for PCA
+  corr_item_sample: 800  # Max items to sample for correlation
+  corr_model_min: 20  # Minimum number of models to compute correlation
+  eps_var: 1e-6  # Threshold for determining near-deterministic items
+  p_lo: 0.05  # Lower bound for p(correct)
+  p_hi: 0.95  # Upper bound for p(correct)
+  rolling_window: 200  # Window size for rolling group coverage (for analysis)
+  bin_size: 200  # Bin size for per-item variation (used in DIF analysis)
+  
+# Model configurations
+models:
+  model_list_file: "configs/models/models.txt"  # List of models to evaluate (path to the file)
+
