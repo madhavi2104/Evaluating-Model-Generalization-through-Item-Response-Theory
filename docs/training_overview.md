@@ -91,6 +91,66 @@ A key distinction in this repository is the difference between:
 
 Wrapper scripts should stay thin. Over time, machine-specific hardcoded paths should be removed from them and replaced with config-driven inputs.
 
+## How to launch training
+
+The wrapper scripts are used to launch backend-specific training runs.
+
+### TIMM example
+
+```bash
+python scripts/train_timm_wrapper.py convnext_base CIFAR100 \
+  --data-root /path/to/data \
+  --output-root /path/to/results
+```
+
+### Torchvision example
+
+```bash
+python scripts/train_torchvision_wrapper.py resnet50 Sketch \
+  --data-root /path/to/data \
+  --output-root /path/to/results
+```
+
+## Environment variable option
+
+Instead of passing paths every time, you can set:
+
+```bash
+export THESIS_DATA_ROOT=/path/to/data
+export THESIS_OUTPUT_ROOT=/path/to/results
+```
+
+and then run:
+
+```bash
+python scripts/train_timm_wrapper.py convnext_base CIFAR100
+python scripts/train_torchvision_wrapper.py resnet50 Sketch
+```
+
+## Dataset assumption
+
+These wrappers expect training-ready dataset directories to already exist under the chosen data root.
+
+The current setup expects split folders such as:
+
+- `ImageNet_Sketch_SPLIT`
+- `ImageNet-C_split`
+- `CIFAR100_split`
+
+These dataset preparation steps must be completed before training is launched.
+
+## What the wrappers do
+
+The wrapper scripts are responsible for:
+
+- selecting the correct dataset directory
+- selecting the output directory
+- resolving the backend training script
+- applying model-specific batch size or worker overrides
+- launching the actual training script with a consistent command
+
+They are **not** intended to perform dataset splitting or preprocessing themselves.
+
 ## Planned cleanup
 
 The main cleanup tasks for the training code are:
