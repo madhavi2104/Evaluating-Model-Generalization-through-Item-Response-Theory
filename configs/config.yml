@@ -20,7 +20,7 @@ paths:
 # Dataset-specific paths
 datasets:
   # Path to the mapping file for ImageNet ↔ CIFAR superclasses
-  imagenet_to_cifar_map: "data/ImageNet/imagenet_to_cifar_superclasses.csv"
+  imagenet_to_cifar_map: "configs/dataset/imagenet_to_cifar_superclasses.csv"
 
   # Dataset-specific paths and splits
   imagenet:
