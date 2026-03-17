@@ -46,7 +46,7 @@ modes_to_check <- c("zeroshot", "trained")
 #    (used in DIF part for superclass summaries)
 # ==========================================================
 
-map_df <- read.csv(config$datasets$imagenet_to_cifar_map, stringsAsFactors = FALSE) %>%
+map_df <- read.csv(config$datasets$imagenet_to_cifar_superclasses.csv, stringsAsFactors = FALSE) %>%
   rename(
     imagenet_id      = ImageNet_ID,
     imagenet_class   = ImageNet_Class,
