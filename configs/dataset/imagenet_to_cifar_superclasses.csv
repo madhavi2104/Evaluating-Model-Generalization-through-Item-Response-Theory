@@ -1,0 +1,1001 @@
+ImageNet_ID,ImageNet_Class,CIFAR_Superclass
+n01440764,tench,fish
+n01443537,goldfish,fish
+n01484850,great_white_shark,fish
+n01491361,tiger_shark,fish
+n01494475,hammerhead,fish
+n01496331,electric_ray,fish
+n01498041,stingray,fish
+n01514668,cock,aquatic mammals
+n01514859,hen,small mammals
+n01518878,ostrich,large omnivores and herbivores
+n01530575,brambling,aquatic mammals
+n01531178,goldfinch,small mammals
+n01532829,house_finch,large man-made outdoor things
+n01534433,junco,small mammals
+n01537544,indigo_bunting,fruit and vegetables
+n01558993,robin,fish
+n01560419,bulbul,small mammals
+n01580077,jay,fish
+n01582220,magpie,small mammals
+n01592084,chickadee,small mammals
+n01601694,water_ouzel,vehicles 2
+n01608432,kite,fish
+n01614925,bald_eagle,vehicles 1
+n01616318,vulture,small mammals
+n01622779,great_grey_owl,household furniture
+n01629819,European_fire_salamander,fish
+n01630670,common_newt,medium-sized mammals
+n01631663,eft,medium-sized mammals
+n01632458,spotted_salamander,fish
+n01632777,axolotl,flowers
+n01641577,bullfrog,fish
+n01644373,tree_frog,trees
+n01644900,tailed_frog,large omnivores and herbivores
+n01664065,loggerhead,reptiles
+n01665541,leatherback_turtle,reptiles
+n01667114,mud_turtle,reptiles
+n01667778,terrapin,reptiles
+n01669191,box_turtle,reptiles
+n01675722,banded_gecko,reptiles
+n01677366,common_iguana,reptiles
+n01682714,American_chameleon,reptiles
+n01685808,whiptail,reptiles
+n01687978,agama,reptiles
+n01688243,frilled_lizard,reptiles
+n01689811,alligator_lizard,reptiles
+n01692333,Gila_monster,reptiles
+n01693334,green_lizard,reptiles
+n01694178,African_chameleon,reptiles
+n01695060,Komodo_dragon,reptiles
+n01697457,African_crocodile,reptiles
+n01698640,American_alligator,fish
+n01704323,triceratops,reptiles
+n01728572,thunder_snake,reptiles
+n01728920,ringneck_snake,reptiles
+n01729322,hognose_snake,reptiles
+n01729977,green_snake,reptiles
+n01734418,king_snake,reptiles
+n01735189,garter_snake,reptiles
+n01737021,water_snake,reptiles
+n01739381,vine_snake,reptiles
+n01740131,night_snake,reptiles
+n01742172,boa_constrictor,reptiles
+n01744401,rock_python,reptiles
+n01748264,Indian_cobra,reptiles
+n01749939,green_mamba,reptiles
+n01751748,sea_snake,reptiles
+n01753488,horned_viper,reptiles
+n01755581,diamondback,reptiles
+n01756291,sidewinder,reptiles
+n01768244,trilobite,small mammals
+n01770081,harvestman,small mammals
+n01770393,scorpion,large man-made outdoor things
+n01773157,black_and_gold_garden_spider,non-insect invertebrates
+n01773549,barn_spider,non-insect invertebrates
+n01773797,garden_spider,non-insect invertebrates
+n01774384,black_widow,non-insect invertebrates
+n01774750,tarantula,non-insect invertebrates
+n01775062,wolf_spider,non-insect invertebrates
+n01776313,tick,insects
+n01784675,centipede,insects
+n01795545,black_grouse,people
+n01796340,ptarmigan,small mammals
+n01797886,ruffed_grouse,aquatic mammals
+n01798484,prairie_chicken,large omnivores and herbivores
+n01806143,peacock,small mammals
+n01806567,quail,small mammals
+n01807496,partridge,small mammals
+n01817953,African_grey,vehicles 1
+n01818515,macaw,small mammals
+n01819313,sulphur-crested_cockatoo,small mammals
+n01820546,lorikeet,small mammals
+n01824575,coucal,small mammals
+n01828970,bee_eater,insects
+n01829413,hornbill,small mammals
+n01833805,hummingbird,small mammals
+n01843065,jacamar,aquatic mammals
+n01843383,toucan,small mammals
+n01847000,drake,fish
+n01855032,red-breasted_merganser,people
+n01855672,goose,fruit and vegetables
+n01860187,black_swan,people
+n01871265,tusker,aquatic mammals
+n01872401,echidna,small mammals
+n01873310,platypus,small mammals
+n01877812,wallaby,large omnivores and herbivores
+n01882714,koala,aquatic mammals
+n01883070,wombat,small mammals
+n01910747,jellyfish,insects
+n01914609,sea_anemone,flowers
+n01917289,brain_coral,flowers
+n01924916,flatworm,non-insect invertebrates
+n01930112,nematode,non-insect invertebrates
+n01943899,conch,non-insect invertebrates
+n01944390,snail,non-insect invertebrates
+n01945685,slug,large omnivores and herbivores
+n01950731,sea_slug,large natural outdoor scenes
+n01955084,chiton,fish
+n01968897,chambered_nautilus,trees
+n01978287,Dungeness_crab,non-insect invertebrates
+n01978455,rock_crab,non-insect invertebrates
+n01980166,fiddler_crab,non-insect invertebrates
+n01981276,king_crab,non-insect invertebrates
+n01983481,American_lobster,non-insect invertebrates
+n01984695,spiny_lobster,non-insect invertebrates
+n01985128,crayfish,non-insect invertebrates
+n01986214,hermit_crab,non-insect invertebrates
+n01990800,isopod,small mammals
+n02002556,white_stork,small mammals
+n02002724,black_stork,people
+n02006656,spoonbill,small mammals
+n02007558,flamingo,small mammals
+n02009229,little_blue_heron,large omnivores and herbivores
+n02009912,American_egret,vehicles 1
+n02011460,bittern,small mammals
+n02012849,crane,vehicles 1
+n02013706,limpkin,aquatic mammals
+n02017213,European_gallinule,vehicles 1
+n02018207,American_coot,vehicles 1
+n02018795,bustard,small mammals
+n02025239,ruddy_turnstone,flowers
+n02027492,red-backed_sandpiper,fruit and vegetables
+n02028035,redshank,small mammals
+n02033041,dowitcher,aquatic mammals
+n02037110,oystercatcher,small mammals
+n02051845,pelican,small mammals
+n02056570,king_penguin,large man-made outdoor things
+n02058221,albatross,small mammals
+n02066245,grey_whale,aquatic mammals
+n02071294,killer_whale,aquatic mammals
+n02074367,dugong,fish
+n02077923,sea_lion,aquatic mammals
+n02085620,Chihuahua,small mammals
+n02085782,Japanese_spaniel,vehicles 1
+n02085936,Maltese_dog,small mammals
+n02086079,Pekinese,vehicles 2
+n02086240,Shih-Tzu,small mammals
+n02086646,Blenheim_spaniel,large natural outdoor scenes
+n02086910,papillon,large natural outdoor scenes
+n02087046,toy_terrier,aquatic mammals
+n02087394,Rhodesian_ridgeback,aquatic mammals
+n02088094,Afghan_hound,vehicles 1
+n02088238,basset,small mammals
+n02088364,beagle,small mammals
+n02088466,bloodhound,small mammals
+n02088632,bluetick,aquatic mammals
+n02089078,black-and-tan_coonhound,people
+n02089867,Walker_hound,fish
+n02089973,English_foxhound,vehicles 1
+n02090379,redbone,aquatic mammals
+n02090622,borzoi,aquatic mammals
+n02090721,Irish_wolfhound,vehicles 1
+n02091032,Italian_greyhound,vehicles 1
+n02091134,whippet,aquatic mammals
+n02091244,Ibizan_hound,small mammals
+n02091467,Norwegian_elkhound,vehicles 1
+n02091635,otterhound,aquatic mammals
+n02091831,Saluki,aquatic mammals
+n02092002,Scottish_deerhound,vehicles 1
+n02092339,Weimaraner,aquatic mammals
+n02093256,Staffordshire_bullterrier,vehicles 1
+n02093428,American_Staffordshire_terrier,vehicles 1
+n02093647,Bedlington_terrier,large natural outdoor scenes
+n02093754,Border_terrier,small mammals
+n02093859,Kerry_blue_terrier,people
+n02093991,Irish_terrier,vehicles 1
+n02094114,Norfolk_terrier,vehicles 1
+n02094258,Norwich_terrier,small mammals
+n02094433,Yorkshire_terrier,small mammals
+n02095314,wire-haired_fox_terrier,medium-sized mammals
+n02095570,Lakeland_terrier,vehicles 1
+n02095889,Sealyham_terrier,small mammals
+n02096051,Airedale,aquatic mammals
+n02096177,cairn,large natural outdoor scenes
+n02096294,Australian_terrier,vehicles 1
+n02096437,Dandie_Dinmont,aquatic mammals
+n02096585,Boston_bull,vehicles 1
+n02097047,miniature_schnauzer,large natural outdoor scenes
+n02097130,giant_schnauzer,small mammals
+n02097209,standard_schnauzer,small mammals
+n02097298,Scotch_terrier,aquatic mammals
+n02097474,Tibetan_terrier,large natural outdoor scenes
+n02097658,silky_terrier,fruit and vegetables
+n02098105,soft-coated_wheaten_terrier,fruit and vegetables
+n02098286,West_Highland_white_terrier,vehicles 1
+n02098413,Lhasa,large natural outdoor scenes
+n02099267,flat-coated_retriever,aquatic mammals
+n02099429,curly-coated_retriever,people
+n02099601,golden_retriever,fruit and vegetables
+n02099712,Labrador_retriever,small mammals
+n02099849,Chesapeake_Bay_retriever,vehicles 1
+n02100236,German_short-haired_pointer,people
+n02100583,vizsla,aquatic mammals
+n02100735,English_setter,vehicles 1
+n02100877,Irish_setter,vehicles 1
+n02101006,Gordon_setter,fish
+n02101388,Brittany_spaniel,fish
+n02101556,clumber,aquatic mammals
+n02102040,English_springer,vehicles 1
+n02102177,Welsh_springer_spaniel,vehicles 1
+n02102318,cocker_spaniel,small mammals
+n02102480,Sussex_spaniel,small mammals
+n02102973,Irish_water_spaniel,vehicles 1
+n02104029,kuvasz,aquatic mammals
+n02104365,schipperke,aquatic mammals
+n02105056,groenendael,aquatic mammals
+n02105162,malinois,aquatic mammals
+n02105251,briard,aquatic mammals
+n02105412,kelpie,large natural outdoor scenes
+n02105505,komondor,aquatic mammals
+n02105641,Old_English_sheepdog,vehicles 1
+n02105855,Shetland_sheepdog,large natural outdoor scenes
+n02106030,collie,large natural outdoor scenes
+n02106166,Border_collie,large omnivores and herbivores
+n02106382,Bouvier_des_Flandres,vehicles 2
+n02106550,Rottweiler,aquatic mammals
+n02106662,German_shepherd,vehicles 1
+n02107142,Doberman,aquatic mammals
+n02107312,miniature_pinscher,large natural outdoor scenes
+n02107574,Greater_Swiss_Mountain_dog,large natural outdoor scenes
+n02107683,Bernese_mountain_dog,large natural outdoor scenes
+n02107908,Appenzeller,aquatic mammals
+n02108000,EntleBucher,aquatic mammals
+n02108089,boxer,vehicles 1
+n02108422,bull_mastiff,large natural outdoor scenes
+n02108551,Tibetan_mastiff,vehicles 2
+n02108915,French_bulldog,vehicles 1
+n02109047,Great_Dane,household electrical devices
+n02109525,Saint_Bernard,fish
+n02109961,Eskimo_dog,household furniture
+n02110063,malamute,aquatic mammals
+n02110185,Siberian_husky,small mammals
+n02110341,dalmatian,aquatic mammals
+n02110627,affenpinscher,aquatic mammals
+n02110806,basenji,aquatic mammals
+n02110958,pug,small mammals
+n02111129,Leonberg,aquatic mammals
+n02111277,Newfoundland,vehicles 2
+n02111500,Great_Pyrenees,food containers
+n02111889,Samoyed,aquatic mammals
+n02112018,Pomeranian,small mammals
+n02112137,chow,small mammals
+n02112350,keeshond,aquatic mammals
+n02112706,Brabancon_griffon,fish
+n02113023,Pembroke,vehicles 2
+n02113186,Cardigan,household furniture
+n02113624,toy_poodle,aquatic mammals
+n02113712,miniature_poodle,large natural outdoor scenes
+n02113799,standard_poodle,small mammals
+n02113978,Mexican_hairless,vehicles 1
+n02114367,timber_wolf,large carnivores
+n02114548,white_wolf,large carnivores
+n02114712,red_wolf,large carnivores
+n02114855,coyote,large carnivores
+n02115641,dingo,fish
+n02115913,dhole,small mammals
+n02116738,African_hunting_dog,vehicles 1
+n02117135,hyena,aquatic mammals
+n02119022,red_fox,medium-sized mammals
+n02119789,kit_fox,medium-sized mammals
+n02120079,Arctic_fox,medium-sized mammals
+n02120505,grey_fox,medium-sized mammals
+n02123045,tabby,aquatic mammals
+n02123159,tiger_cat,aquatic mammals
+n02123394,Persian_cat,vehicles 1
+n02123597,Siamese_cat,large natural outdoor scenes
+n02124075,Egyptian_cat,vehicles 1
+n02125311,cougar,aquatic mammals
+n02127052,lynx,aquatic mammals
+n02128385,leopard,large carnivores
+n02128757,snow_leopard,household furniture
+n02128925,jaguar,fish
+n02129165,lion,large carnivores
+n02129604,tiger,large carnivores
+n02130308,cheetah,aquatic mammals
+n02132136,brown_bear,large carnivores
+n02133161,American_black_bear,large carnivores
+n02134084,ice_bear,large carnivores
+n02134418,sloth_bear,large carnivores
+n02137549,mongoose,aquatic mammals
+n02138441,meerkat,fish
+n02165105,tiger_beetle,insects
+n02165456,ladybug,insects
+n02167151,ground_beetle,insects
+n02168699,long-horned_beetle,insects
+n02169497,leaf_beetle,insects
+n02172182,dung_beetle,insects
+n02174001,rhinoceros_beetle,insects
+n02177972,weevil,insects
+n02190166,fly,fish
+n02206856,bee,insects
+n02219486,ant,insects
+n02226429,grasshopper,small mammals
+n02229544,cricket,vehicles 1
+n02231487,walking_stick,household furniture
+n02233338,cockroach,insects
+n02236044,mantis,insects
+n02256656,cicada,large natural outdoor scenes
+n02259212,leafhopper,insects
+n02264363,lacewing,small mammals
+n02268443,dragonfly,small mammals
+n02268853,damselfly,small mammals
+n02276258,admiral,insects
+n02277742,ringlet,insects
+n02279972,monarch,insects
+n02280649,cabbage_butterfly,insects
+n02281406,sulphur_butterfly,insects
+n02281787,lycaenid,insects
+n02317335,starfish,insects
+n02319095,sea_urchin,large natural outdoor scenes
+n02321529,sea_cucumber,large natural outdoor scenes
+n02325366,wood_rabbit,small mammals
+n02326432,hare,aquatic mammals
+n02328150,Angora,small mammals
+n02342885,hamster,small mammals
+n02346627,porcupine,medium-sized mammals
+n02356798,fox_squirrel,small mammals
+n02361337,marmot,small mammals
+n02363005,beaver,aquatic mammals
+n02364673,guinea_pig,small mammals
+n02389026,sorrel,aquatic mammals
+n02391049,zebra,aquatic mammals
+n02395406,hog,aquatic mammals
+n02396427,wild_boar,aquatic mammals
+n02397096,warthog,aquatic mammals
+n02398521,hippopotamus,aquatic mammals
+n02403003,ox,large omnivores and herbivores
+n02408429,water_buffalo,aquatic mammals
+n02410509,bison,aquatic mammals
+n02412080,ram,household electrical devices
+n02415577,bighorn,aquatic mammals
+n02417914,ibex,aquatic mammals
+n02422106,hartebeest,aquatic mammals
+n02422699,impala,aquatic mammals
+n02423022,gazelle,aquatic mammals
+n02437312,Arabian_camel,large omnivores and herbivores
+n02437616,llama,small mammals
+n02441942,weasel,vehicles 1
+n02442845,mink,aquatic mammals
+n02443114,polecat,aquatic mammals
+n02443484,black-footed_ferret,people
+n02444819,otter,aquatic mammals
+n02445715,skunk,medium-sized mammals
+n02447366,badger,aquatic mammals
+n02454379,armadillo,aquatic mammals
+n02457408,three-toed_sloth,fish
+n02480495,orangutan,large natural outdoor scenes
+n02480855,gorilla,aquatic mammals
+n02481823,chimpanzee,large omnivores and herbivores
+n02483362,gibbon,small mammals
+n02483708,siamang,aquatic mammals
+n02484975,guenon,small mammals
+n02486261,patas,fish
+n02486410,baboon,people
+n02487347,macaque,small mammals
+n02488291,langur,small mammals
+n02488702,colobus,small mammals
+n02489166,proboscis_monkey,large omnivores and herbivores
+n02490219,marmoset,small mammals
+n02492035,capuchin,small mammals
+n02492660,howler_monkey,large omnivores and herbivores
+n02493509,titi,vehicles 2
+n02493793,spider_monkey,insects
+n02494079,squirrel_monkey,aquatic mammals
+n02497673,Madagascar_cat,vehicles 1
+n02500267,indri,aquatic mammals
+n02504013,Indian_elephant,large omnivores and herbivores
+n02504458,African_elephant,large omnivores and herbivores
+n02509815,lesser_panda,large omnivores and herbivores
+n02510455,giant_panda,large omnivores and herbivores
+n02514041,barracouta,aquatic mammals
+n02526121,eel,fish
+n02536864,coho,fish
+n02606052,rock_beauty,aquatic mammals
+n02607072,anemone_fish,fish
+n02640242,sturgeon,fish
+n02641379,gar,large man-made outdoor things
+n02643566,lionfish,fish
+n02655020,puffer,fish
+n02666196,abacus,vehicles 1
+n02667093,abaya,household furniture
+n02669723,academic_gown,household furniture
+n02672831,accordion,fish
+n02676566,acoustic_guitar,vehicles 1
+n02687172,aircraft_carrier,vehicles 2
+n02690373,airliner,vehicles 2
+n02692877,airship,vehicles 2
+n02699494,altar,household furniture
+n02701002,ambulance,vehicles 2
+n02704792,amphibian,insects
+n02708093,analog_clock,household electrical devices
+n02727426,apiary,flowers
+n02730930,apron,aquatic mammals
+n02747177,ashcan,trees
+n02749479,assault_rifle,people
+n02769748,backpack,household furniture
+n02776631,bakery,flowers
+n02777292,balance_beam,food containers
+n02782093,balloon,large man-made outdoor things
+n02783161,ballpoint,vehicles 2
+n02786058,Band_Aid,large man-made outdoor things
+n02787622,banjo,fish
+n02788148,bannister,fish
+n02790996,barbell,household furniture
+n02791124,barber_chair,household furniture
+n02791270,barbershop,large man-made outdoor things
+n02793495,barn,large omnivores and herbivores
+n02794156,barometer,large natural outdoor scenes
+n02795169,barrel,large omnivores and herbivores
+n02797295,barrow,fish
+n02799071,baseball,vehicles 1
+n02802426,basketball,vehicles 1
+n02804414,bassinet,flowers
+n02804610,bassoon,fish
+n02807133,bathing_cap,people
+n02808304,bath_towel,household electrical devices
+n02808440,bathtub,aquatic mammals
+n02814533,beach_wagon,large omnivores and herbivores
+n02814860,beacon,food containers
+n02815834,beaker,aquatic mammals
+n02817516,bearskin,large man-made outdoor things
+n02823428,beer_bottle,food containers
+n02823750,beer_glass,trees
+n02825657,bell_cote,fruit and vegetables
+n02834397,bib,flowers
+n02835271,bicycle-built-for-two,vehicles 1
+n02837789,bikini,aquatic mammals
+n02840245,binder,aquatic mammals
+n02841315,binoculars,aquatic mammals
+n02843684,birdhouse,flowers
+n02859443,boathouse,vehicles 2
+n02860847,bobsled,large omnivores and herbivores
+n02865351,bolo_tie,household furniture
+n02869837,bonnet,household furniture
+n02870880,bookcase,small mammals
+n02871525,bookshop,large man-made outdoor things
+n02877765,bottlecap,flowers
+n02879718,bow,household furniture
+n02883205,bow_tie,household furniture
+n02892201,brass,aquatic mammals
+n02892767,brassiere,aquatic mammals
+n02894605,breakwater,large natural outdoor scenes
+n02895154,breastplate,food containers
+n02906734,broom,vehicles 2
+n02909870,bucket,vehicles 2
+n02910353,buckle,household furniture
+n02916936,bulletproof_vest,household furniture
+n02917067,bullet_train,vehicles 1
+n02927161,butcher_shop,vehicles 1
+n02930766,cab,food containers
+n02939185,caldron,fruit and vegetables
+n02948072,candle,household electrical devices
+n02950826,cannon,vehicles 2
+n02951358,canoe,fish
+n02951585,can_opener,food containers
+n02963159,cardigan,household furniture
+n02965783,car_mirror,food containers
+n02966193,carousel,household furniture
+n02966687,carpenter's_kit,people
+n02971356,carton,food containers
+n02974003,car_wheel,large man-made outdoor things
+n02977058,cash_machine,large man-made outdoor things
+n02978881,cassette,household electrical devices
+n02979186,cassette_player,household electrical devices
+n02980441,castle,large man-made outdoor things
+n02981792,catamaran,large man-made outdoor things
+n02988304,CD_player,household electrical devices
+n02992211,cello,fish
+n02992529,cellular_telephone,household electrical devices
+n02999410,chain,household electrical devices
+n03000134,chainlink_fence,large omnivores and herbivores
+n03000247,chain_mail,household electrical devices
+n03000684,chain_saw,household furniture
+n03014705,chest,household furniture
+n03016953,chiffonier,aquatic mammals
+n03017168,chime,household furniture
+n03018349,china_cabinet,vehicles 1
+n03026506,Christmas_stocking,trees
+n03028079,church,vehicles 1
+n03032252,cinema,vehicles 1
+n03041632,cleaver,aquatic mammals
+n03042490,cliff_dwelling,aquatic mammals
+n03045698,cloak,vehicles 2
+n03047690,clog,household electrical devices
+n03062245,cocktail_shaker,food containers
+n03063599,coffee_mug,food containers
+n03063689,coffeepot,food containers
+n03065424,coil,food containers
+n03075370,combination_lock,flowers
+n03085013,computer_keyboard,household electrical devices
+n03089624,confectionery,fruit and vegetables
+n03095699,container_ship,flowers
+n03100240,convertible,trees
+n03109150,corkscrew,fruit and vegetables
+n03110669,cornet,fish
+n03124043,cowboy_boot,fish
+n03124170,cowboy_hat,fish
+n03125729,cradle,household furniture
+n03126707,crane,vehicles 1
+n03127747,crash_helmet,people
+n03127925,crate,small mammals
+n03131574,crib,fruit and vegetables
+n03133878,Crock_Pot,fruit and vegetables
+n03134739,croquet_ball,household furniture
+n03141823,crutch,household furniture
+n03146219,cuirass,aquatic mammals
+n03160309,dam,large natural outdoor scenes
+n03179701,desk,household furniture
+n03180011,desktop_computer,household electrical devices
+n03187595,dial_telephone,household electrical devices
+n03188531,diaper,household electrical devices
+n03196217,digital_clock,household electrical devices
+n03197337,digital_watch,household electrical devices
+n03201208,dining_table,household furniture
+n03207743,dishrag,vehicles 2
+n03207941,dishwasher,fruit and vegetables
+n03208938,disk_brake,household electrical devices
+n03216828,dock,fish
+n03218198,dogsled,large omnivores and herbivores
+n03220513,dome,food containers
+n03223299,doormat,household furniture
+n03240683,drilling_platform,large natural outdoor scenes
+n03249569,drum,vehicles 1
+n03250847,drumstick,fruit and vegetables
+n03255030,dumbbell,household furniture
+n03259280,Dutch_oven,vehicles 1
+n03271574,electric_fan,household electrical devices
+n03272010,electric_guitar,large natural outdoor scenes
+n03272562,electric_locomotive,food containers
+n03290653,entertainment_center,large man-made outdoor things
+n03291819,envelope,large man-made outdoor things
+n03297495,espresso_maker,food containers
+n03314780,face_powder,fruit and vegetables
+n03325584,feather_boa,household furniture
+n03337140,file,household electrical devices
+n03344393,fireboat,large man-made outdoor things
+n03345487,fire_engine,people
+n03347037,fire_screen,people
+n03355925,flagpole,vehicles 1
+n03372029,flute,fish
+n03376595,folding_chair,household furniture
+n03379051,football_helmet,people
+n03384352,forklift,vehicles 1
+n03388043,fountain,aquatic mammals
+n03388183,fountain_pen,food containers
+n03388549,four-poster,household furniture
+n03393912,freight_car,large man-made outdoor things
+n03394916,French_horn,vehicles 1
+n03400231,frying_pan,fruit and vegetables
+n03404251,fur_coat,household furniture
+n03417042,garbage_truck,people
+n03424325,gasmask,household furniture
+n03425413,gas_pump,vehicles 2
+n03443371,goblet,trees
+n03444034,go-kart,vehicles 1
+n03445777,golf_ball,fish
+n03445924,golfcart,vehicles 1
+n03447447,gondola,large natural outdoor scenes
+n03447721,gong,people
+n03450230,gown,household furniture
+n03452741,grand_piano,fish
+n03457902,greenhouse,vehicles 2
+n03459775,grille,food containers
+n03461385,grocery_store,flowers
+n03467068,guillotine,people
+n03476684,hair_slide,people
+n03476991,hair_spray,people
+n03478589,half_track,people
+n03481172,hammer,aquatic mammals
+n03482405,hamper,vehicles 2
+n03483316,hand_blower,household electrical devices
+n03485407,hand-held_computer,household electrical devices
+n03485794,handkerchief,vehicles 2
+n03492542,hard_disc,household electrical devices
+n03494278,harmonica,fish
+n03495258,harp,fish
+n03496892,harvester,vehicles 2
+n03498962,hatchet,aquatic mammals
+n03527444,holster,aquatic mammals
+n03529860,home_theater,vehicles 1
+n03530642,honeycomb,aquatic mammals
+n03532672,hook,fish
+n03534580,hoopskirt,aquatic mammals
+n03535780,horizontal_bar,food containers
+n03538406,horse_cart,large omnivores and herbivores
+n03544143,hourglass,aquatic mammals
+n03584254,iPod,vehicles 1
+n03584829,iron,aquatic mammals
+n03590841,jack-o'-lantern,household electrical devices
+n03594734,jean,fish
+n03594945,jeep,vehicles 1
+n03595614,jersey,vehicles 1
+n03598930,jigsaw_puzzle,household electrical devices
+n03599486,jinrikisha,aquatic mammals
+n03602883,joystick,household electrical devices
+n03617480,kimono,household furniture
+n03623198,knee_pad,large omnivores and herbivores
+n03627232,knot,aquatic mammals
+n03630383,lab_coat,aquatic mammals
+n03633091,ladle,fruit and vegetables
+n03637318,lampshade,household furniture
+n03642806,laptop,household electrical devices
+n03649909,lawn_mower,household electrical devices
+n03657121,lens_cap,household furniture
+n03658185,letter_opener,household furniture
+n03661043,library,large man-made outdoor things
+n03662601,lifeboat,vehicles 2
+n03666591,lighter,food containers
+n03670208,limousine,non-insect invertebrates
+n03673027,liner,aquatic mammals
+n03676483,lipstick,fruit and vegetables
+n03680355,Loafer,household furniture
+n03690938,lotion,flowers
+n03691459,loudspeaker,vehicles 1
+n03692522,loupe,household furniture
+n03697007,lumbermill,large man-made outdoor things
+n03706229,magnetic_compass,food containers
+n03709823,mailbag,household furniture
+n03710193,mailbox,household electrical devices
+n03710637,maillot,people
+n03710721,maillot,people
+n03717622,manhole_cover,vehicles 2
+n03720891,maraca,fish
+n03721384,marimba,fish
+n03724870,mask,people
+n03729826,matchstick,fruit and vegetables
+n03733131,maypole,flowers
+n03733281,maze,household electrical devices
+n03733805,measuring_cup,food containers
+n03742115,medicine_chest,food containers
+n03743016,megalith,large man-made outdoor things
+n03759954,microphone,vehicles 1
+n03761084,microwave,fruit and vegetables
+n03763968,military_uniform,household electrical devices
+n03764736,milk_can,food containers
+n03769881,minibus,vehicles 1
+n03770439,miniskirt,people
+n03770679,minivan,food containers
+n03773504,missile,vehicles 2
+n03775071,mitten,large man-made outdoor things
+n03775546,mixing_bowl,food containers
+n03776460,mobile_home,large natural outdoor scenes
+n03777568,Model_T,large natural outdoor scenes
+n03777754,modem,household electrical devices
+n03781244,monastery,large man-made outdoor things
+n03782006,monitor,food containers
+n03785016,moped,vehicles 1
+n03786901,mortar,vehicles 2
+n03787032,mortarboard,large man-made outdoor things
+n03788195,mosque,vehicles 1
+n03788365,mosquito_net,insects
+n03791053,motor_scooter,vehicles 1
+n03792782,mountain_bike,vehicles 1
+n03792972,mountain_tent,large natural outdoor scenes
+n03793489,mouse,small mammals
+n03794056,mousetrap,fish
+n03796401,moving_van,people
+n03803284,muzzle,vehicles 2
+n03804744,nail,aquatic mammals
+n03814639,neck_brace,household furniture
+n03814906,necklace,fish
+n03825788,nipple,aquatic mammals
+n03832673,notebook,household electrical devices
+n03837869,obelisk,large man-made outdoor things
+n03838899,oboe,fish
+n03840681,ocarina,fish
+n03841143,odometer,vehicles 2
+n03843555,oil_filter,household electrical devices
+n03854065,organ,food containers
+n03857828,oscilloscope,food containers
+n03866082,overskirt,aquatic mammals
+n03868242,oxcart,small mammals
+n03868863,oxygen_mask,household electrical devices
+n03871628,packet,food containers
+n03873416,paddle,aquatic mammals
+n03874293,paddlewheel,large man-made outdoor things
+n03874599,padlock,large man-made outdoor things
+n03876231,paintbrush,flowers
+n03877472,pajama,flowers
+n03877845,palace,large man-made outdoor things
+n03884397,panpipe,vehicles 2
+n03887697,paper_towel,household electrical devices
+n03888257,parachute,vehicles 2
+n03888605,parallel_bars,food containers
+n03891251,park_bench,fish
+n03891332,parking_meter,household electrical devices
+n03895866,passenger_car,household electrical devices
+n03899768,patio,aquatic mammals
+n03902125,pay-phone,household electrical devices
+n03903868,pedestal,trees
+n03908618,pencil_box,large man-made outdoor things
+n03908714,pencil_sharpener,flowers
+n03916031,perfume,flowers
+n03920288,Petri_dish,fruit and vegetables
+n03924679,photocopier,household electrical devices
+n03929660,pick,vehicles 1
+n03929855,pickelhaube,food containers
+n03930313,picket_fence,large omnivores and herbivores
+n03930630,pickup,vehicles 1
+n03933933,pier,vehicles 2
+n03935335,piggy_bank,small mammals
+n03937543,pill_bottle,food containers
+n03938244,pillow,household furniture
+n03942813,ping-pong_ball,vehicles 1
+n03944341,pinwheel,flowers
+n03947888,pirate,large natural outdoor scenes
+n03950228,pitcher,household electrical devices
+n03954731,plane,food containers
+n03956157,planetarium,large natural outdoor scenes
+n03958227,plastic_bag,aquatic mammals
+n03961711,plate_rack,food containers
+n03967562,plow,aquatic mammals
+n03970156,plunger,aquatic mammals
+n03976467,Polaroid_camera,household electrical devices
+n03976657,pole,food containers
+n03977966,police_van,people
+n03980874,poncho,vehicles 2
+n03982430,pool_table,household furniture
+n03983396,pop_bottle,food containers
+n03991062,pot,fruit and vegetables
+n03992509,potter's_wheel,fish
+n03995372,power_drill,household electrical devices
+n03998194,prayer_rug,aquatic mammals
+n04004767,printer,large natural outdoor scenes
+n04005630,prison,vehicles 1
+n04008634,projectile,vehicles 2
+n04009552,projector,food containers
+n04019541,puck,food containers
+n04023962,punching_bag,household furniture
+n04026417,purse,large man-made outdoor things
+n04033901,quill,aquatic mammals
+n04033995,quilt,fruit and vegetables
+n04037443,racer,vehicles 1
+n04039381,racket,large man-made outdoor things
+n04040759,radiator,food containers
+n04041544,radio,household electrical devices
+n04044716,radio_telescope,household electrical devices
+n04049303,rain_barrel,vehicles 2
+n04065272,recreational_vehicle,large natural outdoor scenes
+n04067472,reel,fish
+n04069434,reflex_camera,household electrical devices
+n04070727,refrigerator,fruit and vegetables
+n04074963,remote_control,household electrical devices
+n04081281,restaurant,fruit and vegetables
+n04086273,revolver,vehicles 2
+n04090263,rifle,vehicles 2
+n04099969,rocking_chair,household furniture
+n04111531,rotisserie,fruit and vegetables
+n04116512,rubber_eraser,aquatic mammals
+n04118538,rugby_ball,vehicles 1
+n04118776,rule,vehicles 1
+n04120489,running_shoe,fish
+n04125021,safe,aquatic mammals
+n04127249,safety_pin,large man-made outdoor things
+n04131690,saltshaker,fish
+n04133789,sandal,household furniture
+n04136333,sarong,household furniture
+n04141076,sax,fish
+n04141327,scabbard,aquatic mammals
+n04141975,scale,household electrical devices
+n04146614,school_bus,vehicles 1
+n04147183,schooner,large natural outdoor scenes
+n04149813,scoreboard,household electrical devices
+n04152593,screen,food containers
+n04153751,screw,aquatic mammals
+n04154565,screwdriver,aquatic mammals
+n04162706,seat_belt,household furniture
+n04179913,sewing_machine,household electrical devices
+n04192698,shield,vehicles 2
+n04200800,shoe_shop,vehicles 1
+n04201297,shoji,trees
+n04204238,shopping_basket,large man-made outdoor things
+n04204347,shopping_cart,large man-made outdoor things
+n04208210,shovel,aquatic mammals
+n04209133,shower_cap,aquatic mammals
+n04209239,shower_curtain,household furniture
+n04228054,ski,vehicles 1
+n04229816,ski_mask,people
+n04235860,sleeping_bag,household furniture
+n04238763,slide_rule,vehicles 1
+n04239074,sliding_door,vehicles 1
+n04243546,slot,large man-made outdoor things
+n04251144,snorkel,fish
+n04252077,snowmobile,aquatic mammals
+n04252225,snowplow,vehicles 1
+n04254120,soap_dispenser,household electrical devices
+n04254680,soccer_ball,vehicles 1
+n04254777,sock,aquatic mammals
+n04258138,solar_dish,flowers
+n04259630,sombrero,vehicles 2
+n04263257,soup_bowl,food containers
+n04264628,space_bar,household electrical devices
+n04265275,space_heater,household electrical devices
+n04266014,space_shuttle,vehicles 2
+n04270147,spatula,fruit and vegetables
+n04273569,speedboat,vehicles 1
+n04275548,spider_web,insects
+n04277352,spindle,household furniture
+n04285008,sports_car,vehicles 1
+n04286575,spotlight,household electrical devices
+n04296562,stage,aquatic mammals
+n04310018,steam_locomotive,household electrical devices
+n04311004,steel_arch_bridge,large man-made outdoor things
+n04311174,steel_drum,vehicles 1
+n04317175,stethoscope,household electrical devices
+n04325704,stole,household furniture
+n04326547,stone_wall,food containers
+n04328186,stopwatch,fish
+n04330267,stove,fruit and vegetables
+n04332243,strainer,fruit and vegetables
+n04335435,streetcar,vehicles 2
+n04336792,stretcher,household electrical devices
+n04344873,studio_couch,household furniture
+n04346328,stupa,large man-made outdoor things
+n04347754,submarine,vehicles 2
+n04350905,suit,vehicles 2
+n04355338,sundial,trees
+n04355933,sunglass,large man-made outdoor things
+n04356056,sunglasses,large man-made outdoor things
+n04357314,sunscreen,household electrical devices
+n04366367,suspension_bridge,large man-made outdoor things
+n04367480,swab,vehicles 2
+n04370456,sweatshirt,fish
+n04371430,swimming_trunks,household furniture
+n04371774,swing,large man-made outdoor things
+n04372370,switch,household electrical devices
+n04376876,syringe,food containers
+n04380533,table_lamp,household electrical devices
+n04389033,tank,vehicles 2
+n04392985,tape_player,large man-made outdoor things
+n04398044,teapot,food containers
+n04399382,teddy,people
+n04404412,television,household electrical devices
+n04409515,tennis_ball,vehicles 1
+n04417672,thatch,vehicles 2
+n04418357,theater_curtain,vehicles 1
+n04423845,thimble,fruit and vegetables
+n04428191,thresher,fish
+n04429376,throne,household furniture
+n04435653,tile_roof,aquatic mammals
+n04442312,toaster,trees
+n04443257,tobacco_shop,household electrical devices
+n04447861,toilet_seat,aquatic mammals
+n04456115,torch,aquatic mammals
+n04458633,totem_pole,food containers
+n04461696,tow_truck,people
+n04462240,toyshop,large man-made outdoor things
+n04465501,tractor,vehicles 2
+n04467665,trailer_truck,people
+n04476259,tray,household furniture
+n04479046,trench_coat,aquatic mammals
+n04482393,tricycle,household furniture
+n04483307,trimaran,fish
+n04485082,tripod,household furniture
+n04486054,triumphal_arch,household furniture
+n04487081,trolleybus,vehicles 1
+n04487394,trombone,fish
+n04493381,tub,fruit and vegetables
+n04501370,turnstile,household electrical devices
+n04505470,typewriter_keyboard,household electrical devices
+n04507155,umbrella,vehicles 2
+n04509417,unicycle,vehicles 1
+n04515003,upright,household furniture
+n04517823,vacuum,household electrical devices
+n04522168,vase,flowers
+n04523525,vault,food containers
+n04525038,velvet,household furniture
+n04525305,vending_machine,household electrical devices
+n04532106,vestment,large omnivores and herbivores
+n04532670,viaduct,large man-made outdoor things
+n04536866,violin,fish
+n04540053,volleyball,vehicles 1
+n04542943,waffle_iron,fruit and vegetables
+n04548280,wall_clock,household electrical devices
+n04548362,wallet,large man-made outdoor things
+n04550184,wardrobe,household furniture
+n04552348,warplane,vehicles 2
+n04553703,washbasin,trees
+n04554684,washer,household electrical devices
+n04557648,water_bottle,food containers
+n04560804,water_jug,food containers
+n04562935,water_tower,vehicles 2
+n04579145,whiskey_jug,food containers
+n04579432,whistle,household furniture
+n04584207,wig,people
+n04589890,window_screen,food containers
+n04590129,window_shade,food containers
+n04591157,Windsor_tie,vehicles 1
+n04591713,wine_bottle,food containers
+n04592741,wing,people
+n04596742,wok,fruit and vegetables
+n04597913,wooden_spoon,fruit and vegetables
+n04599235,wool,vehicles 2
+n04604644,worm_fence,large omnivores and herbivores
+n04606251,wreck,vehicles 2
+n04612504,yawl,large natural outdoor scenes
+n04613696,yurt,large man-made outdoor things
+n06359193,web_site,large natural outdoor scenes
+n06596364,comic_book,vehicles 1
+n06785654,crossword_puzzle,household electrical devices
+n06794110,street_sign,vehicles 1
+n06874185,traffic_light,food containers
+n07248320,book_jacket,household furniture
+n07565083,menu,flowers
+n07579787,plate,food containers
+n07583066,guacamole,fruit and vegetables
+n07584110,consomme,fruit and vegetables
+n07590611,hot_pot,aquatic mammals
+n07613480,trifle,fruit and vegetables
+n07614500,ice_cream,fruit and vegetables
+n07615774,ice_lolly,aquatic mammals
+n07684084,French_loaf,fruit and vegetables
+n07693725,bagel,fruit and vegetables
+n07695742,pretzel,fruit and vegetables
+n07697313,cheeseburger,fruit and vegetables
+n07697537,hotdog,fruit and vegetables
+n07711569,mashed_potato,fruit and vegetables
+n07714571,head_cabbage,fruit and vegetables
+n07714990,broccoli,fruit and vegetables
+n07715103,cauliflower,fruit and vegetables
+n07716358,zucchini,fruit and vegetables
+n07716906,spaghetti_squash,fruit and vegetables
+n07717410,acorn_squash,fruit and vegetables
+n07717556,butternut_squash,fruit and vegetables
+n07718472,cucumber,fruit and vegetables
+n07718747,artichoke,fruit and vegetables
+n07720875,bell_pepper,fruit and vegetables
+n07730033,cardoon,fruit and vegetables
+n07734744,mushroom,fruit and vegetables
+n07742313,Granny_Smith,fruit and vegetables
+n07745940,strawberry,trees
+n07747607,orange,fruit and vegetables
+n07749582,lemon,fruit and vegetables
+n07753113,fig,fruit and vegetables
+n07753275,pineapple,food containers
+n07753592,banana,fruit and vegetables
+n07754684,jackfruit,fruit and vegetables
+n07760859,custard_apple,fruit and vegetables
+n07768694,pomegranate,trees
+n07802026,hay,vehicles 2
+n07831146,carbonara,fruit and vegetables
+n07836838,chocolate_sauce,food containers
+n07860988,dough,fruit and vegetables
+n07871810,meat_loaf,fruit and vegetables
+n07873807,pizza,fruit and vegetables
+n07875152,potpie,fruit and vegetables
+n07880968,burrito,fruit and vegetables
+n07892512,red_wine,fruit and vegetables
+n07920052,espresso,food containers
+n07930864,cup,food containers
+n07932039,eggnog,trees
+n09193705,alp,large natural outdoor scenes
+n09229709,bubble,large man-made outdoor things
+n09246464,cliff,vehicles 2
+n09256479,coral_reef,flowers
+n09288635,geyser,aquatic mammals
+n09332890,lakeside,non-insect invertebrates
+n09399592,promontory,trees
+n09421951,sandbar,fish
+n09428293,seashore,vehicles 2
+n09468604,valley,vehicles 1
+n09472597,volcano,large natural outdoor scenes
+n09835506,ballplayer,household furniture
+n10148035,groom,flowers
+n10565667,scuba_diver,vehicles 1
+n11879895,rapeseed,flowers
+n11939491,daisy,flowers
+n12057211,yellow_lady's_slipper,flowers
+n12144580,corn,flowers
+n12267677,acorn,fruit and vegetables
+n12620546,hip,people
+n12768682,buckeye,vehicles 2
+n12985857,coral_fungus,flowers
+n12998815,agaric,small mammals
+n13037406,gyromitra,aquatic mammals
+n13040303,stinkhorn,small mammals
+n13044778,earthstar,aquatic mammals
+n13052670,hen-of-the-woods,aquatic mammals
+n13054560,bolete,flowers
+n13133613,ear,aquatic mammals
+n15075141,toilet_tissue,aquatic mammals
