@@ -132,14 +132,3 @@ training or adaptation experiments**.
 
     -   Use the scripts to merge the binary response matrices and proceed with IRT modeling as outlined in Level 3.
 
-## Final Notes
-
--   Ensure that all **dependencies** are installed, and the environment
-    is set up as per the instructions in `docs/setup.md`.
-
--   For any specific **dataset or model issues**, refer to the
-    `docs/datasets.md` for detailed setup instructions.
-
--   **Troubleshooting** steps are provided in the
-    `docs/troubleshooting.md` for common errors during training,
-    evaluation, or IRT analysis.
