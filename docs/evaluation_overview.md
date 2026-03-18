@@ -1,6 +1,6 @@
 # Evaluation and Binary Response Matrix Pipeline
 
-This document describes how trained or pretrained models are evaluated and how their outputs are converted into the binary response matrices used for IRT analysis.
+This document explains how trained or pretrained models are evaluated and how their outputs are converted into the binary response matrices used for IRT analysis. The evaluation pipeline is a key component of this thesis as it provides the data required to fit Item Response Theory (IRT) models, allowing us to analyze latent model abilities, item difficulties, and other performance metrics beyond accuracy.
 
 ## Overview
 
@@ -69,13 +69,19 @@ It is distinct from both strict zero-shot evaluation and full dataset-specific t
 
 ## Step 1: Export per-model binary correctness
 
-The core evaluation script is:
+To evaluate a model on a dataset under a specific regime, run the following command:
 
-```text
-src/inference/export_binary_correctness.py
+```bash
+python src/inference/export_binary_correctness.py --model <model_name> --dataset <dataset_name> --regime <regime> --data-root <path_to_data>
 ```
 
 This script evaluates one model on one dataset under one regime and writes its per-item results.
+
+Example for ImageNet with zero-shot evaluation:
+
+```bash
+python src/inference/export_binary_correctness.py --model resnet50 --dataset ImageNet --regime zeroshot --data-root /path/to/data
+```
 
 ### Output structure
 
@@ -303,12 +309,16 @@ For a typical dataset/regime combination, the recommended order is:
 - `src/inference/build_binary_matrix.py`
 - `scripts/run_merge_binary_matrices.py`
 
-## Future extensions
+## Reproducibility
 
-As the repository is refined further, this documentation can be extended with:
+The evaluation pipeline is designed to be **reproducible** at different levels:
 
-- exact example commands for each dataset
-- checkpoint naming conventions
+- **Level 1: Final figure reproduction**: Reproduce the key figures and tables from the pre-processed outputs.
+- **Level 2: Analysis reproduction**: Re-run IRT fitting and downstream analyses using the saved response matrices or prediction files.
+- **Level 3: Prediction reproduction**: Re-run inference to generate new predictions and binary correctness matrices.
+- **Level 4: Full experiment reproduction**: Re-run compute-heavy training or adaptation experiments where resources allow.
+
+You can reproduce the analysis by following the instructions in the `docs/datasets.md`, `docs/training.md`, and `docs/irt_analysis.md` documents.
 - dataset split assumptions for each regime
 - IRT script usage examples
 - troubleshooting notes for missing or mismatched items
