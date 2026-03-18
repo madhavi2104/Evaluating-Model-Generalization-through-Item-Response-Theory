@@ -1,7 +1,6 @@
-# Data Setup
+# Data Setup and Preparation
 
-This repository does **not** include the datasets used in the thesis.  
-You must download and prepare them locally before running the pipeline.
+This document explains how to set up and prepare the datasets for use in this repository. Since the datasets used in the project are not included due to licensing, size, and distribution restrictions, you must download and prepare them locally before running the pipeline.
 
 ## Datasets used
 
@@ -12,14 +11,13 @@ The experiments in this repository use the following datasets:
 - **ImageNet-C**
 - **CIFAR-100**
 
-Because of licensing, size, and distribution restrictions, dataset files are not stored in this repository.
+Due to licensing and size constraints, you need to download these datasets manually. Below, you will find details on the dataset structure, how to download them, and how to set them up for use with the repository.
 
 ## General setup principle
 
-All dataset paths should be configured locally through config files or environment variables.  
-Do not hardcode machine-specific absolute paths into the source code.
+All dataset paths should be configured through config files or environment variables. This allows the pipeline to be portable and adaptable to different environments without hardcoding machine-specific absolute paths.
 
-The repository is designed so that users can point the pipeline to their own local dataset locations.
+The pipeline is designed so that users can point it to their own local dataset locations by modifying the paths in the configuration file (config/config.yml) or by setting environment variables.
 
 ## Expected local structure
 
@@ -39,7 +37,11 @@ data/
 └── README.md
 ```
 
-The exact internal structure of each dataset should follow the standard layout expected by the corresponding loading code.
+### Folder Details:
+- `external/`: This directory contains the raw, downloaded datasets. Each dataset should be placed in its respective folder (e.g., imagenet/, cifar100/).
+- `processed/`: This directory is for any processed data files. It will be populated with results such as model predictions or preprocessed data during pipeline execution.
+
+Ensure that the internal structure of each dataset follows the standard layout expected by the respective loading code.
 
 ## Dataset notes
 
@@ -105,6 +107,53 @@ CIFAR-100 may be handled either through automatic dataset download in PyTorch or
 
 If stored locally, use a clearly documented path and keep setup consistent across scripts.
 
+Recommended raw layout:
+
+```text
+data/external/cifar100/
+├── train/
+│   ├── apple/
+│   ├── orange/
+│   └── ...
+└── val/
+    ├── apple/
+    ├── orange/
+    └── ...
+```
+## Environment Setup and Configuration
+
+### Configuring Dataset Paths
+
+In the `config/config.yml` file, you can configure the paths for the datasets you have downloaded. The relevant sections should be filled out to point to your local dataset locations.
+
+Example configuration:
+
+``` text
+paths:
+  imagenet: "/path/to/data/external/imagenet/"
+  imagenet_sketch: "/path/to/data/external/imagenet_sketch/"
+  imagenet_c: "/path/to/data/external/imagenet_c/"
+  cifar100: "/path/to/data/external/cifar100/"
+```
+Alternatively, you can set environment variables for dataset paths if you prefer not to modify the configuration file directly
+
+``` text
+export IMAGE_NET_PATH=/path/to/data/external/imagenet/
+export CIFAR100_PATH=/path/to/data/external/cifar100/
+```
+
+### Downloading Datasets
+
+For each dataset, follow the respective download link and instructions from the sources. Below are the general steps to download the datasets:
+
+ImageNet: [Link to ImageNet dataset](https://www.image-net.org/)
+
+ImageNet-Sketch: [Link to ImageNet-Sketch dataset](https://github.com/HaohanWang/ImageNet-Sketch)
+
+ImageNet-C: [Link to ImageNet-C dataset](https://github.com/hendrycks/robustness)
+
+CIFAR-100: [Link to CIFAR-100 dataset](https://www.cs.toronto.edu/~kriz/cifar.html)
+
 ## Training-ready dataset splits
 
 Some training scripts in this repository expect datasets to already be arranged into training-ready folder splits.
@@ -155,22 +204,10 @@ This repository does **not yet automatically generate** these training-ready spl
 
 If a formal preprocessing or split-generation script is added later, it should be documented in:
 
-- `scripts/01_prepare_data.sh`
-- or a dedicated preprocessing document in `docs/`
+- `scripts/prepare_data_split.py`
 
 Until then, users should assume that these split folders must already be created locally before training starts.
 
-## Processed data
-
-The `data/processed/` directory can be used for generated intermediate files such as:
-
-- merged metadata
-- label maps
-- sampled subsets
-- cached preprocessing outputs
-- binary response input tables
-
-Raw external datasets should remain separate from processed outputs.
 
 ## Important reproducibility note
 
@@ -183,17 +220,11 @@ To make the repository portable:
 - keep preprocessing deterministic where possible
 - clearly distinguish between raw dataset layout and training-ready split layout
 
-## What will be documented later
+## Troubleshooting
 
-This file is the top-level data guide. As the repository is cleaned, it should later include:
-
-- exact dataset versions
-- download sources
-- checksum or verification notes where possible
-- preprocessing decisions
-- subset definitions used in each experiment
-- any label remapping required for evaluation
-- split-generation steps for training-ready datasets
+If you encounter errors related to missing or mismatched files, check the following:
+- Ensure that the folder structure matches the expected layout for each dataset.
+- Verify that the dataset paths are correctly set in the `config/config.yml` file or environment variables.
 
 ## Summary
 
