@@ -1,6 +1,6 @@
 # Evaluating Model Generalization through Item Response Theory
 
-This repository is part of my master's thesis, focusing on using Item Response Theory (IRT) to analyze the robustness of machine learning models across various datasets derived from ImageNet. Due to dataset size constraints, this repository does not include the datasets directly but provides instructions on downloading and preparing them for use.
+This repository is part of my master's thesis, focusing on using Item Response Theory (IRT) to evaluate vision models beyond standard accuracy metrics. Due to dataset size constraints, this repository does not include the datasets directly but provides instructions on downloading and preparing them for use.
 
 ## Overview
 
@@ -126,17 +126,10 @@ Because some datasets have access restrictions or large storage requirements, th
 
 ## Running the project
 
-The project is organized as a staged pipeline. A typical run will look like:
-
-```bash
-bash scripts/01_prepare_data.sh
-bash scripts/02_train.sh
-bash scripts/03_predict.sh
-bash scripts/04_fit_irt.sh
-bash scripts/05_make_figures.sh
-```
-
-These scripts are placeholders initially and will be filled in as the repository is cleaned and standardized.
+1. **Dataset Preparation**: Follow the instructions in `docs/datasets.md` to set up the datasets.
+2. **Model Training**: Use the `scripts/train_timm_wrapper.py` or `scripts/train_torchvision_wrapper.py` to train models.
+3. **IRT Fitting**: Run the IRT fitting process using the scripts in `src/irt/fitting/`.
+4. **Analysis**: Use the scripts in `src/irt/diagnostics/` and `src/irt/postprocess/` for downstream statistical analysis, PCA, and visualization.
 
 ## Outputs
 
