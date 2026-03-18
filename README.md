@@ -1,6 +1,6 @@
 # Evaluating Model Generalization through Item Response Theory
 
-This repository is part of my master's thesis, focusing on using Item Response Theory (IRT) to evaluate vision models beyond standard accuracy metrics. Due to dataset size constraints, this repository does not include the datasets directly but provides instructions on downloading and preparing them for use.
+This repository is part of my master's thesis, focusing on using Item Response Theory (IRT) to evaluate vision models beyond standard accuracy metrics. Due to dataset size constraints, this repository does not include the datasets directly but provides instructions on downloading and preparing them for use. More about the project can be found in `docs/project_overview.md`.
 
 ## Overview
 
@@ -40,7 +40,7 @@ The thesis experiments use the following datasets:
 - **CIFAR-100**
 
 These datasets are **not distributed** with this repository.  
-You must download them separately and place them in the expected folder structure described in `data/README.md`.
+You must download them separately and place them in the expected folder structure described in `docs/datasets.md`.
 
 ## Models
 
@@ -67,17 +67,18 @@ Re-run model inference to regenerate prediction files and binary correctness mat
 ### Level 3: Full experiment reproduction
 Re-run training or adaptation pipelines where compute and dataset access allow.
 
+Refer to `docs/reproducibility.md` for an in-depth explanation and implentation explanation.
+
 ## Pipeline
 
-The overall workflow is:
+The overall workflow is (recommended documentation of process in brackets):
 
-1. Prepare datasets
-2. Run model training or evaluation
-3. Save predictions
-4. Convert predictions into binary correctness matrices
-5. Fit IRT models
-6. Run downstream analyses
-7. Generate figures and tables
+1. Prepare datasets (`docs/datasets.md`)
+2. Run model training or evaluation (`docs/training_overview.md` and `docs/evaluation_overview.md`)
+3. Save predictions (`docs/evaluation_overview.md`)
+4. Convert predictions into binary correctness matrices (`docs/evaluation_overview.md`)
+5. Fit IRT models (`docs/irt_analyses.md`)
+6. Run downstream analyses (`docs/irt_analyses.md`)
 
 ## Repository Structure
 
@@ -87,7 +88,6 @@ The overall workflow is:
 ├── configs/            # Dataset, model, and experiment configuration files
 ├── data/               # Data instructions and dataset setup docs
 ├── docs/               # Additional documentation
-├── notebooks/          # Exploration and figure prototyping
 ├── results/            # Generated outputs, tables, figures, logs
 ├── scripts/            # High-level run scripts for each stage
 └── src/                # Core source code for training, inference, IRT, and analysis
@@ -154,20 +154,6 @@ This project involves multiple datasets, many models, and some compute-heavy sta
 - GPU resources for training-based stages
 
 For practical reproducibility, the repository is being organized so that lighter stages can still be reproduced independently from the most expensive ones.
-
-## Thesis-to-code mapping
-
-A separate document will map thesis sections to code modules and output files:
-
-```text
-docs/thesis_to_repo_map.md
-```
-
-This is intended to make it easier to connect the written thesis to the implementation.
-
-## Status
-
-This repository is currently being cleaned and reorganized into a fully reproducible structure from the original thesis codebase.
 
 ## Citation
 
