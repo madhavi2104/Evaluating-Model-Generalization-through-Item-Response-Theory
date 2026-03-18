@@ -117,19 +117,15 @@ This repository is being structured for **staged reproducibility**.
 
 That means users should be able to reproduce the work at different levels:
 
-### Level 1: Final figure reproduction
-
-Generate key figures and tables from saved processed outputs.
-
-### Level 2: Analysis reproduction
+### Level 1: Analysis reproduction
 
 Re-run IRT fitting and downstream analyses from saved response matrices or prediction files.
 
-### Level 3: Prediction reproduction
+### Level 2: Prediction reproduction
 
 Re-run inference to generate fresh predictions and binary correctness matrices.
 
-### Level 4: Full experiment reproduction
+### Level 3: Full experiment reproduction
 
 Re-run compute-heavy training or adaptation experiments where resources allow.
 
@@ -146,39 +142,3 @@ The cleaned repository is built around the following principles:
 - portable directory structure
 - support for partial reruns of individual stages
 
-## Planned repository structure
-
-The project is organized into the following conceptual parts:
-
-- `configs/` for dataset, model, and experiment settings
-- `data/` for dataset instructions and local setup notes
-- `src/training/` for model training logic
-- `src/inference/` for prediction and correctness generation
-- `src/irt/` for IRT fitting and psychometric analysis
-- `src/analysis/` for statistics, PCA, plots, and tables
-- `scripts/` for stage-wise execution
-- `results/` for generated outputs
-
-## Intended audience
-
-This repository is designed for several kinds of readers:
-
-- thesis examiners who want to inspect the implementation
-- researchers interested in model evaluation under dataset shift
-- users who want to reproduce selected figures or analyses
-- future collaborators or future versions of the project
-
-## Current status
-
-The original thesis codebase is being reorganized into a clean and reproducible structure.  
-At this stage, the goal is to preserve the scientific pipeline while improving readability, portability, and rerunnability.
-
-## Next documentation steps
-
-As the repository is refined, this overview should later be complemented by:
-
-- `docs/reproducibility.md`
-- `docs/thesis_to_repo_map.md`
-- `docs/datasets.md`
-- experiment-specific configuration notes
-- script-level usage instructions
