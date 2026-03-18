@@ -1,6 +1,12 @@
 # Training Overview
 
-This document describes the training-related code in the repository and how it is organized.
+This document describes the training pipelines used in this repository. It supports three main backends for training models, each tailored to different experiment setups:
+
+- **TIMM-based training**: For training or fine-tuning models using the TIMM library.
+- **Torchvision-based training**: For training using standard Torchvision models.
+- **Head-only CIFAR-100 adaptation**: For using ImageNet-pretrained models and adapting them to CIFAR-100 by replacing the classifier head.
+
+The training scripts in this repository are organized around **wrapper scripts**. These scripts allow you to easily train models on different datasets with minimal configuration. The wrapper scripts handle model creation, training loops, and evaluation, making it easy to run experiments with different settings.
 
 ## Overview
 
@@ -85,7 +91,7 @@ This workflow is kept separate because it is conceptually different from the mai
 
 ### Important clarification
 
-Although this protocol starts from ImageNet-pretrained weights, it is **not strict zero-shot evaluation** on CIFAR-100.  
+Although this protocol starts from ImageNet-pretrained weights, it is **not a strict zero-shot evaluation** on CIFAR-100.  
 It is a **head-only supervised adaptation protocol** using pretrained initialization.
 
 That distinction matters for reproducibility and for matching the experimental setup described in the thesis.
@@ -177,16 +183,22 @@ The wrapper scripts are responsible for:
 
 They are **not** intended to perform dataset splitting or preprocessing themselves.
 
-## Planned cleanup
 
-The main cleanup tasks for the training code are:
+## Expected Outputs
 
-- remove hardcoded absolute paths
-- rename helper files to remove `_local`
-- standardize output directory naming
-- unify logging conventions across backends
-- move dataset and output paths into config files
-- document expected inputs and outputs for each training route
+After running the training scripts, the following outputs will be generated:
+
+- **Model Checkpoints**: Saved in the `results/checkpoints/` directory.
+- **Training Logs**: Logs detailing training progress, loss curves, and other metrics will be saved in `results/logs/`.
+- **Evaluation Metrics**: Metrics like accuracy, loss, and other relevant statistics will be saved in `results/evaluation/`.
+
+The wrapper scripts allow you to specify the output directories in the configuration file (`config/config.yml`).
+
+## Troubleshooting
+
+- **Missing Model Weights**: If the script reports missing model weights, ensure the model name is correctly specified in `models.txt` and that the weights are available.
+- **Dataset Not Found**: Double-check that the dataset paths are correctly configured in `config/config.yml` or set as environment variables.
+- **Memory Issues**: If you encounter memory issues during training, try reducing the batch size or using a smaller model.
 
 ## Design principle
 
