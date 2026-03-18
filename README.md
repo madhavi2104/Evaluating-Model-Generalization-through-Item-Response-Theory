@@ -58,16 +58,13 @@ Depending on the experiment, models are either:
 
 This repository is designed to support several levels of reproducibility.
 
-### Level 1: Figure reproduction
-Recreate thesis figures and tables from saved processed outputs.
-
-### Level 2: Analysis reproduction
+### Level 1: Analysis reproduction
 Re-run IRT fitting, rank analysis, PCA analysis, and related statistics from saved prediction or response files.
 
-### Level 3: Prediction reproduction
+### Level 2: Prediction reproduction
 Re-run model inference to regenerate prediction files and binary correctness matrices.
 
-### Level 4: Full experiment reproduction
+### Level 3: Full experiment reproduction
 Re-run training or adaptation pipelines where compute and dataset access allow.
 
 ## Pipeline
