@@ -93,6 +93,41 @@ Here is a step-by-step example of running the IRT pipeline:
   - Use ```src/irt/postprocess/save_accuracy_theta_tables.R``` and ```src/irt/postprocess/hypothesis_correlations.R``` to analyse the relationship between model performance and latent ability.
   - Run other scripts in ```src/irt/diagnostics/``` to generate IRT-based diagnostics.
 
+## Methodology
+
+The IRT pipeline fits a **2PL (Two-Parameter Logistic)** model to estimate **item difficulty** and **discrimination** parameters. The model assumes that the probability of a correct response depends on:
+- **Difficulty**: The threshold of ability required for a model to answer an item correctly.
+- **Discrimination**: How well an item distinguishes between models with different abilities.
+
+The IRT model is fitted using the `mirt` package in R, which uses an Expectation-Maximization (EM) algorithm to estimate the model parameters.
+
+## Expected Inputs and Outputs
+
+**Inputs**:
+- Binary response matrices (`binary_response_matrix.csv`)
+- Model predictions for each dataset and regime
+
+**Outputs**:
+- Estimated model ability (`theta`) for each model
+- Item difficulty (`b`) and discrimination (`a`) parameters
+- Diagnostic plots and tables
+
+## Configuration and Setup
+
+To configure the dataset paths and other settings, modify the `config/config.yml` file. Ensure that the paths to the datasets, model weights, and output directories are correctly set.
+
+Example configuration:
+```yaml
+paths:
+  dataset_root: "/path/to/data/"
+  output_dir: "/path/to/output/"
+```
+
+## Troubleshooting
+
+**Missing Files**: If the script throws an error about missing files, ensure that the dataset paths are correctly set in the `config/config.yml` file and that all necessary files are downloaded.
+
+**Data Format Issues**: Ensure that the datasets are organized according to the expected folder structure. Refer to `docs/datasets.md` for more details on dataset preparation.
 
 ## Notes 
 
