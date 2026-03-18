@@ -28,6 +28,8 @@ The repository is organized around five major stages:
 4. IRT modeling
 5. downstream statistical and geometric analysis
 
+![method_pipeline](.gitattributes/method_pipeline.png)
+
 ## Stage 1: Dataset preparation
 
 The project uses multiple vision datasets with different characteristics:
